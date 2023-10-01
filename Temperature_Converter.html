@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Temperature Converter</title>
+    <script src="https://kit.fontawesome.com/7bbd281a93.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="Temperature_Converter.css">
+</head>
+
+<body>
+    <!--Main Background-->
+    <div class="main-background">
+        <!--Title-->
+        <h1>Temperature Converter</h1>
+        <!--Information about and Function-->
+        <div class="converter-container shadow-lg mb-3">
+            <!--Every Device has 12 Columns-->
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="infoContainer">
+                        <div class="info " id="infoContainer">
+                            <!--Degree input-->
+                            <label for="degreeId" class="degree mb-2"> Degree</label>
+                            <br>
+                            <input id="inputValue" type="number" name="degree" placeholder="Enter Numbers Here" required>
+                            <br>
+                            <div class="mt-2"></div>
+                            <!--Type to convert-->
+                            <span class="type mb-3">Type</span>
+                            <br>
+                            <select name="type" id="type">
+                                <option value="celcius">Celcius</option>
+                                <option value="kelvin">Kelvin</option>
+                                <option value="fahrenheit">Fahrenheit</option>
+                                <option value="rankine">Rankine</option>
+                            </select>
+                            <br>
+                            <!--Button Elements Convert and Reset-->
+                            <button id="convertBtn" class="btn mt-4 mb-5">Convert</button>
+                            <button id="reset" class="btn  mt-4 mb-5">Reset</button>
+                        </div>
+                    </div>
+                </div>
+                <!--Result Container-->
+                <div class="col-12 col-md-6 ">
+                    <div class="resultContainer d-flex flex-row justify-content-center ">
+                        <p id="result"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="Temperature_Converter.js"></script>
+</body>
+
+</html>
